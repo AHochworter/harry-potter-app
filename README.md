@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Harry Potter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome Harry Potter Fans! This react application was built for you.
 
 ## Available Scripts
 
