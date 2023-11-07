@@ -1,8 +1,27 @@
 .characters {
-  background-color: #030e17;
+  /* background-color: #030e17; */
   grid-area: characters;
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* Create 3 columns with equal width */
   grid-gap: 1rem;
-  margin: 20px 20px 10px 20px;
+  grid-template-areas:
+    'character-filter'
+    'character-cards';
+  /* margin: 20px 20px 10px 20px; */
+}
+
+.filter-container {
+  grid-area: character-filter;
+  padding: 0rem 1rem;
+}
+
+.character-filter {
+  height: 2rem;
+}
+
+.character-cards {
+  grid-area: character-cards;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
 }

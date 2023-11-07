@@ -3,6 +3,8 @@ import './App.css';
 import Header from '../Header/Header';
 import Characters from '../Characters/Characters';
 import Footer from '../Footer/Footer';
+import SelectedCharacterContainer from '../SelectedCharacterContainer/SelectedCharacterContainer';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const dummyData = [
@@ -117,7 +119,18 @@ function App() {
   return (
     <div className="App">
       <Header className="header" />
-      <Characters className="characters" characters={characters} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Characters className="characters" characters={characters} />
+          }
+        />
+        <Route
+          path="/characters/:id"
+          element={<SelectedCharacterContainer />}
+        />
+      </Routes>
       <Footer className="footer" />
     </div>
   );

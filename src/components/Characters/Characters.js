@@ -36,9 +36,11 @@ function Characters({ characters }) {
     );
   });
   return (
-    <div className="characters">
-      <CharacterFilter filter={filter} onFilterChange={handleFilterChange} />
-      {characterCards}
+    <div className="characters-container">
+      <div className="filter-container">
+        <CharacterFilter filter={filter} onFilterChange={handleFilterChange} />
+      </div>
+      <div className="character-cards">{characterCards}</div>
     </div>
   );
 }

@@ -7,7 +7,7 @@
   grid-template-rows: 15% auto 15%; /* Changed the middle row to auto */
   grid-template-areas:
     'header'
-    'characters'
+    'characters-container'
     'footer';
   grid-gap: 1em;
 }
