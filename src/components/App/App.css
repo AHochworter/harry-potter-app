@@ -1,0 +1,13 @@
+.App {
+  background-color: #030e17;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% auto 15%; /* Changed the middle row to auto */
+  grid-template-areas:
+    'header'
+    'characters'
+    'footer';
+  grid-gap: 1em;
+}
