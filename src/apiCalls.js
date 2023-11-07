@@ -1,7 +1,10 @@
 function getCharacters() {
-  return fetch('https://hp-api.onrender.com/api/characters').then(response =>
-    response.json()
-  );
+  return fetch('https://hp-api.onrender.com/api/characters').then(response => {
+    if (!response.ok) {
+      throw new Error(`${response.status} ${response.statusText}`);
+    }
+    return response.json();
+  });
 }
 
 function getUniqueCharacter() {
@@ -10,4 +13,4 @@ function getUniqueCharacter() {
     .then(data => console.log('uniqueID', data));
 }
 
-export { getCharacters };
+export { getCharacters, getUniqueCharacter };

@@ -9,12 +9,17 @@ import { getCharacters } from '../../apiCalls';
 
 function App() {
   const [characters, setCharacters] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    getCharacters().then(data => {
-      const charactersWithImage = data.filter(character => character.image);
-      setCharacters([...characters, ...charactersWithImage]);
-    });
+    getCharacters()
+      .then(data => {
+        const charactersWithImage = data.filter(character => character.image);
+        setCharacters([...characters, ...charactersWithImage]);
+      })
+      .catch(error => {
+        setError(error);
+      });
   }, []);
 
   return (
