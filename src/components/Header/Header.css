@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&display=swap');
+
+.header {
+  background-color: #030e17;
+}
+
+.heading-one {
+  font-family: 'Hepta Slab', serif;
+  color: #ffffff;
+  margin: 1rem 0rem 1rem 2rem;
+}
+
+.heading-two {
+  font-family: 'Hepta Slab', serif;
+  color: #ffffff;
+  margin: 1rem 0rem 1rem 2rem;
+}
