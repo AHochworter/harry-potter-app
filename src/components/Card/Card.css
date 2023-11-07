@@ -15,8 +15,10 @@
 }
 
 .character-card-img {
-  width: 100%;
+  border: 0;
   height: auto;
+  width: 100%;
+  vertical-align: middle;
 }
 
 .card:hover .character-card-img {

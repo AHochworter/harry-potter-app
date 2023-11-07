@@ -2,17 +2,15 @@ import { useState } from 'react';
 import './Characters.css';
 import Card from '../Card/Card';
 import CharacterFilter from '../CharacterFilter/CharacterFilter';
+import { Link } from 'react-router-dom'; // Import Link
 
 function Characters({ characters }) {
-  //setup state for filtering
   const [filter, setFilter] = useState('all');
 
-  //function to track dropdown selection
   const handleFilterChange = event => {
     setFilter(event.target.value);
   };
 
-  //use filtered characters to render the cards, default to all
   const filteredCharacters = characters.filter(character => {
     if (filter === 'all') {
       return true;
@@ -22,9 +20,14 @@ function Characters({ characters }) {
       return character.hogwartsStaff;
     }
   });
-  //map over the filtered results
-  const characterCards = filteredCharacters.map(character => {
-    return (
+
+  const characterCards = filteredCharacters.map(character => (
+    // Use the Link component to link to the selected character's page
+    <Link
+      to={`/character/${character.id}`}
+      key={character.id}
+      className="character-link"
+    >
       <Card
         key={character.id}
         id={character.id}
@@ -33,8 +36,9 @@ function Characters({ characters }) {
         student={character.hogwartsStudent}
         staff={character.hogwartsStaff}
       />
-    );
-  });
+    </Link>
+  ));
+
   return (
     <div className="characters-container">
       <div className="filter-container">
