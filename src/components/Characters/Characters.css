@@ -1,5 +1,5 @@
 .characters {
-  background-color: aquamarine;
+  background-color: #030e17;
   grid-area: characters;
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* Create 3 columns with equal width */
