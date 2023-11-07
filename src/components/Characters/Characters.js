@@ -22,7 +22,7 @@ function Characters({ characters }) {
   });
 
   const characterCards = filteredCharacters.map(character => (
-    // Use the Link component to link to the selected character's page
+    // Put the react link here, capture the card component inside the link
     <Link
       to={`/character/${character.id}`}
       key={character.id}
