@@ -1,5 +1,9 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
-  /* background-color: #030e17; */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -7,22 +11,39 @@
   box-shadow: 4px 4px;
   border-radius: 7px;
   padding: 10px;
+  flex: 1;
+  margin: 10px;
 }
 
+.character-name {
+  text-decoration: none;
+  font-size: 1rem;
+  justify-content: center;
+}
 .card:hover {
   cursor: pointer;
-  opacity: 90%;
+  opacity: 0.9;
+}
+
+.image-container-main {
+  width: 100%;
+  height: 0;
+  padding-bottom: 135%; /* Maintain the image's aspect ratio (e.g., 1:1). Adjust as needed. */
+  position: relative;
+  overflow: hidden;
 }
 
 .character-card-img {
-  border: 0;
-  height: auto;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  vertical-align: middle;
+  height: 100%;
+  object-fit: cover; /* Scale and crop the image to fit the container. */
+  border: 0;
 }
 
-.card:hover .character-card-img {
-  filter: brightness(50%);
-  transform: scale(1.1);
-  transition: transform 0.2s ease;
+.card h2 {
+  margin-top: 10px; /* Add some spacing between the image and the name. */
 }
