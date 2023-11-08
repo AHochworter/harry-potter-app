@@ -1,6 +1,11 @@
 .focus-character-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: blueviolet;
   width: 100%;
+  height: 75%;
+  padding: 2rem;
 }
 .img-container {
   display: flex;
