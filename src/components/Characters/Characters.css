@@ -25,3 +25,10 @@
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
 }
+
+a:link,
+a:visited,
+a:active {
+  /* color: #01122e; */
+  text-decoration: none;
+}

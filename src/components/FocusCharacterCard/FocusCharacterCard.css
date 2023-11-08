@@ -1,21 +1,38 @@
 .focus-character-card {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
   background-color: blueviolet;
-  width: 100%;
+  width: 85%;
   height: 75%;
   padding: 2rem;
 }
+
+.focus-card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: blue;
+  width: 50%;
+}
+.focus-card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  padding: 1rem;
+  background-color: chartreuse;
+}
+
 .img-container {
   display: flex;
   flex-direction: column;
-  background-color: brown;
-  width: 20%;
+  width: 45%;
 }
 
 .focus-character-image {
-  /* border: 5rem; */
+  border-radius: 15px;
   height: auto;
   max-width: auto;
   vertical-align: middle;
