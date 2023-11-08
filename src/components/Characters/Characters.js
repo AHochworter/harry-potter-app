@@ -59,7 +59,7 @@ export default Characters;
 Characters.propTypes = {
   characters: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string,
       name: PropTypes.string.isRequired,
       image: PropTypes.string,
       student: PropTypes.bool,

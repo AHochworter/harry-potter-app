@@ -17,7 +17,6 @@ function SelectedCharacterContainer() {
         //Access the first (and only)object in the array
         const characterData = data[0];
         setSelectedCharacter(characterData);
-        console.log('GETTING HERE!');
       } catch (error) {
         console.log('Error', error);
         setSelectedCharacterError(error.message);

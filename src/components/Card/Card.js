@@ -3,13 +3,17 @@ import PropTypes from 'prop-types';
 
 function Card({ name, image }) {
   return (
-    <div className="card">
-      <img
-        src={image}
-        alt="character portrait"
-        className="character-card-img"
-      />
-      <h2>{name}</h2>
+    <div className="card-container">
+      <div className="card">
+        <div className="image-container">
+          <img
+            src={image}
+            alt="character portrait"
+            className="character-card-img"
+          />
+        </div>
+        <h2 className="character-name">{name}</h2>
+      </div>
     </div>
   );
 }
@@ -17,6 +21,7 @@ function Card({ name, image }) {
 export default Card;
 
 Card.propTypes = {
+  id: PropTypes.string,
   name: PropTypes.string.isRequired,
   image: PropTypes.string,
 };
