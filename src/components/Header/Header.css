@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&display=swap');
 
-.header {
+.header-container {
+  display: flex;
+  /* flex-direction: column; */
   background-color: #030e17;
 }
+.app-title-container {
+  width: 75%;
+}
 
+.header {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-link {
+  color: blueviolet;
+  font-size: 1rem;
+}
 .heading-one {
   font-family: 'Hepta Slab', serif;
   color: #ffffff;

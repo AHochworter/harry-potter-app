@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { getCharacters } from '../../apiCalls';
 import './App.css';
 import Header from '../Header/Header';
 import Characters from '../Characters/Characters';
 import Footer from '../Footer/Footer';
 import SelectedCharacterContainer from '../SelectedCharacterContainer/SelectedCharacterContainer';
-import { Routes, Route } from 'react-router-dom';
-import { getCharacters } from '../../apiCalls';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -32,10 +32,7 @@ function App() {
             <Characters className="characters" characters={characters} />
           }
         />
-        <Route
-          path="/characters/:id"
-          element={<SelectedCharacterContainer />}
-        />
+        <Route path="/character/:id" element={<SelectedCharacterContainer />} />
       </Routes>
       <Footer className="footer" />
     </div>
