@@ -1,7 +1,7 @@
 .focus-character-card {
   display: flex;
   flex-direction: row;
-  background-color: blueviolet;
+  background-color: rgb(21, 61, 46);
   width: 85%;
   height: 75%;
   padding: 2rem;
@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: blue;
+  background-color: #2f5a60;
   width: 50%;
 }
 .focus-card-right {
@@ -22,19 +22,35 @@
   align-items: flex-start;
   width: 50%;
   padding: 1rem;
-  background-color: chartreuse;
+  background-color: #2f5a60;
 }
 
 .img-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 45%;
 }
 
 .focus-character-image {
   border-radius: 15px;
-  height: auto;
+  height: 65%;
   max-width: auto;
   vertical-align: middle;
   align-content: center;
+}
+
+.focus-name,
+.focus-house {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.focus-actor,
+.focus-born,
+.focus-ancestry,
+.focus-wizard,
+.focus-wand,
+.focus-patronus {
+  color: #ffffff;
 }

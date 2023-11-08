@@ -5,8 +5,11 @@ import PropTypes from 'prop-types';
 function CharacterFilter({ filter, onFilterChange }) {
   return (
     <div className="character-filter">
-      <label htmlFor="filter-dropdown">Filter by:</label>
+      <label className="filter-by" htmlFor="filter-dropdown">
+        Filter by:
+      </label>
       <select
+        className="filter-dropdown"
         name="filter-dropdown"
         id="filter-dropdown"
         value={filter}

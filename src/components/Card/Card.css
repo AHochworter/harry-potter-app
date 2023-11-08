@@ -12,6 +12,7 @@
   border-radius: 7px;
   padding: 10px;
   flex: 1;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
   margin: 10px;
 }
 
@@ -23,6 +24,13 @@
 .card:hover {
   cursor: pointer;
   opacity: 0.9;
+  filter: brightness(115%);
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover .character-name {
+  text-decoration: underline #808080;
 }
 
 .image-container-main {
@@ -46,4 +54,14 @@
 
 .card h2 {
   margin-top: 10px; /* Add some spacing between the image and the name. */
+}
+
+@media (max-width: 1080px) {
+  .card {
+    width: 40%;
+  }
+
+  .character-name {
+    font-size: 0.8em;
+  }
 }
