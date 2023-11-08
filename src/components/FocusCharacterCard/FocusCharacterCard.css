@@ -57,3 +57,14 @@
 .focus-patronus {
   color: #ffffff;
 }
+
+@media screen and (max-width: 650px) {
+  .focus-character-card {
+    flex-direction: column;
+  }
+
+  .focus-card-left,
+  .focus-card-right {
+    width: 100%;
+  }
+}
