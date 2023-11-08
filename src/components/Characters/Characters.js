@@ -11,6 +11,10 @@ function Characters({ characters }) {
     setFilter(event.target.value);
   };
 
+  if (!characters || characters.length === 0) {
+    return <div>No characters available.</div>;
+  }
+
   const filteredCharacters = characters.filter(character => {
     if (filter === 'all') {
       return true;

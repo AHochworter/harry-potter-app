@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './SelectedCharacterContainer.css';
 import FocusCharacterCard from '../FocusCharacterCard/FocusCharacterCard';
+import ErrorComponent from '../ErrorComponent/ErrorComponent';
 
 function SelectedCharacterContainer() {
   const [selectedCharacter, setSelectedCharacter] = useState('');
@@ -28,7 +29,12 @@ function SelectedCharacterContainer() {
 
   return (
     <div className="selected-character">
-      {selectedCharacter ? (
+      {selectedCharacterError ? (
+        <ErrorComponent
+          error={selectedCharacterError}
+          message="We're sorry, we're experiencing a server error. Please try again later"
+        />
+      ) : selectedCharacter ? ( //think about reversing this logic with the!selectedCharacter first
         <FocusCharacterCard
           name={selectedCharacter.name}
           house={selectedCharacter.house}

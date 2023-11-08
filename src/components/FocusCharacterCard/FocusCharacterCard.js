@@ -11,28 +11,32 @@ function FocusCharacterCard({
   image,
   actor,
 }) {
-  console.log('name', name);
   return (
     <div className="focus-character-card">
       <h2>Name: {name}</h2>
       <div className="img-container">
-        <img
-          className="focus-character-image"
-          src={image}
-          alt="character-portrait"
-        />
+        {image ? (
+          <img
+            className="focus-character-image"
+            src={image}
+            alt="character-portrait"
+          />
+        ) : (
+          <p>No image Available</p>
+        )}
       </div>
-      <h3>House: {house}</h3>
-      <p>Born: {yearOfBirth}</p>
-      <p>Ancestry: {ancestry}</p>
+      <h3>House: {house || 'N/A'}</h3>
+      <p>Born: {yearOfBirth || 'N/A'}</p>
+      <p>Ancestry: {ancestry || 'N/A'}</p>
       <p>Wizard: {wizard ? 'Yes' : 'No'}</p>
       {wand && (
         <p>
-          Wand: {wand.wood} wood, {wand.core} core, Length: {wand.length} inches
+          Wand: {wand.wood || 'N/A'} wood, {wand.core || 'N/A'} core, Length:{' '}
+          {wand.length || 'N/A'} inches
         </p>
       )}
-      <p>Patronus: {patronus}</p>
-      <p>Actor: {actor}</p>
+      <p>Patronus: {patronus || 'N/A'}</p>
+      <p>Actor: {actor || 'N/A'}</p>
     </div>
   );
 }
