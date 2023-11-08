@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 import Characters from '../Characters/Characters';
 import Footer from '../Footer/Footer';
 import SelectedCharacterContainer from '../SelectedCharacterContainer/SelectedCharacterContainer';
+import ErrorComponent from '../ErrorComponent/ErrorComponent';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -25,15 +26,27 @@ function App() {
   return (
     <div className="App">
       <Header className="header" />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Characters className="characters" characters={characters} />
-          }
-        />
-        <Route path="/character/:id" element={<SelectedCharacterContainer />} />
-      </Routes>
+      {error ? (
+        <div className="app-error-container">
+          <ErrorComponent
+            error={error}
+            message="We're sorry, we seem to be having trouble finding that page.  Please try again later."
+          />
+        </div>
+      ) : (
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Characters className="characters" characters={characters} />
+            }
+          />
+          <Route
+            path="/character/:id"
+            element={<SelectedCharacterContainer />}
+          />
+        </Routes>
+      )}
       <Footer className="footer" />
     </div>
   );
