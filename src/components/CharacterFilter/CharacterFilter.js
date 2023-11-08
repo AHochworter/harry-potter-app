@@ -1,5 +1,6 @@
 import React from 'react';
 import './CharacterFilter.css';
+import PropTypes from 'prop-types';
 
 function CharacterFilter({ filter, onFilterChange }) {
   return (
@@ -20,3 +21,8 @@ function CharacterFilter({ filter, onFilterChange }) {
 }
 
 export default CharacterFilter;
+
+CharacterFilter.propTypes = {
+  filter: PropTypes.string,
+  onFilterChange: PropTypes.func,
+};

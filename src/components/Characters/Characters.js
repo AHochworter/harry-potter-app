@@ -3,6 +3,7 @@ import './Characters.css';
 import Card from '../Card/Card';
 import CharacterFilter from '../CharacterFilter/CharacterFilter';
 import { Link } from 'react-router-dom'; // Import Link
+import PropTypes from 'prop-types';
 
 function Characters({ characters }) {
   const [filter, setFilter] = useState('all');
@@ -54,3 +55,15 @@ function Characters({ characters }) {
 }
 
 export default Characters;
+
+Characters.propTypes = {
+  characters: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string,
+      student: PropTypes.bool,
+      staff: PropTypes.bool,
+    })
+  ),
+};

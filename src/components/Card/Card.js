@@ -1,4 +1,5 @@
 import './Card.css';
+import PropTypes from 'prop-types';
 
 function Card({ name, image }) {
   return (
@@ -14,3 +15,8 @@ function Card({ name, image }) {
 }
 
 export default Card;
+
+Card.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string,
+};

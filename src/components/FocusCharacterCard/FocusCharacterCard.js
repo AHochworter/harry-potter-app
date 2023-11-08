@@ -1,4 +1,5 @@
 import './FocusCharacterCard.css';
+import PropTypes from 'prop-types';
 
 function FocusCharacterCard({
   name,
@@ -42,3 +43,19 @@ function FocusCharacterCard({
 }
 
 export default FocusCharacterCard;
+
+FocusCharacterCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  house: PropTypes.string,
+  yearOfBirth: PropTypes.number,
+  ancestry: PropTypes.string,
+  wizard: PropTypes.bool,
+  wand: PropTypes.shape({
+    wood: PropTypes.string,
+    core: PropTypes.string,
+    length: PropTypes.number,
+  }),
+  patronus: PropTypes.string,
+  image: PropTypes.string,
+  actor: PropTypes.string,
+};
