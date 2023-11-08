@@ -16,8 +16,8 @@
   align-items: center;
 }
 
-.home-link {
-  color: blueviolet;
+.header .home-link {
+  color: #ffffff;
   font-size: 1rem;
 }
 .heading-one {
