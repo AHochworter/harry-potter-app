@@ -1,3 +1,18 @@
 .focus-character-card {
+  background-color: blueviolet;
   width: 100%;
+}
+.img-container {
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+  width: 20%;
+}
+
+.focus-character-image {
+  /* border: 5rem; */
+  height: auto;
+  max-width: auto;
+  vertical-align: middle;
+  align-content: center;
 }

@@ -15,6 +15,13 @@ function FocusCharacterCard({
   return (
     <div className="focus-character-card">
       <h2>Name: {name}</h2>
+      <div className="img-container">
+        <img
+          className="focus-character-image"
+          src={image}
+          alt="character-portrait"
+        />
+      </div>
       <h3>House: {house}</h3>
       <p>Born: {yearOfBirth}</p>
       <p>Ancestry: {ancestry}</p>
@@ -25,7 +32,6 @@ function FocusCharacterCard({
         </p>
       )}
       <p>Patronus: {patronus}</p>
-      <img src={image} alt="character-portrait" />
       <p>Actor: {actor}</p>
     </div>
   );
