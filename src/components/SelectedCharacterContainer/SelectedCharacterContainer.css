@@ -1,4 +1,7 @@
 .selected-character {
-  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
   background-color: aqua;
 }

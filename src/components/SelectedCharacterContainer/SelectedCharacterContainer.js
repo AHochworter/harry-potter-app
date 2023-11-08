@@ -8,7 +8,6 @@ function SelectedCharacterContainer() {
   const [selectedCharacter, setSelectedCharacter] = useState('');
   const [selectedCharacterError, setSelectedCharacterError] = useState(null);
   const { id } = useParams();
-  console.log('useParams', id);
 
   useEffect(() => {
     async function fetchData() {
@@ -16,8 +15,6 @@ function SelectedCharacterContainer() {
         const data = await getUniqueCharacter(id);
         //Access the first (and only)object in the array
         const characterData = data[0];
-
-        console.log('Character ID:', id);
         setSelectedCharacter(characterData);
         console.log('GETTING HERE!');
       } catch (error) {
@@ -29,7 +26,6 @@ function SelectedCharacterContainer() {
     fetchData();
   }, [id]);
 
-  console.log('selectedCharacter', selectedCharacter);
   return (
     <div className="selected-character">
       {selectedCharacter ? (
