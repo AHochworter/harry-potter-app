@@ -9,6 +9,18 @@
   width: 75%;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+.header-logo {
+  width: 150px;
+  height: 75px;
+}
+
 .header {
   display: flex;
   width: 30%;
@@ -23,11 +35,11 @@
 .heading-one {
   font-family: 'Hepta Slab', serif;
   color: #ffffff;
-  margin: 1rem 0rem 1rem 2rem;
+  margin: 1rem 0rem 1rem 0.5rem;
 }
 
 .heading-two {
   font-family: 'Hepta Slab', serif;
   color: #ffffff;
-  margin: 1rem 0rem 1rem 2rem;
+  margin: 1rem 0rem 1rem 0.5rem;
 }

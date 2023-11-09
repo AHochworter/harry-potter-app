@@ -12,7 +12,8 @@ function Footer() {
         </div>
         <p className="project-details">
           Harry Potter Magic Moments is a Turing School Module 3 project built
-          with React.js. Designed and developed by FE 2307 Ann Hochworter.
+          with React.js. Designed and developed by FE 2307 student Ann
+          Hochworter.
         </p>
       </div>
       <div className="linkedin-block">

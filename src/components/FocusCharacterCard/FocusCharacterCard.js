@@ -27,12 +27,12 @@ function FocusCharacterCard({
             <p>No image Available</p>
           )}
         </div>
-        <p className="focus-actor">Actor: {actor || 'N/A'}</p>
+        <p className="focus-actor">Actor: {actor || 'Not Provided'}</p>
       </div>
       <div className="focus-card-right">
-        <h3 className="focus-house">{house || 'N/A'}</h3>
-        <p className="focus-born">Born: {yearOfBirth || 'N/A'}</p>
-        <p className="focus-ancestry">Ancestry: {ancestry || 'N/A'}</p>
+        <h3 className="focus-house">{house || 'No Hogwarts House Assigned'}</h3>
+        <p className="focus-born">Born: {yearOfBirth || 'Not Provided'}</p>
+        <p className="focus-ancestry">Ancestry: {ancestry || 'Not Provided'}</p>
         <p className="focus-wizard">Wizard: {wizard ? 'Yes' : 'No'}</p>
         {wand && (
           <p className="focus-wand">
@@ -40,7 +40,9 @@ function FocusCharacterCard({
             {wand.length || 'N/A'} inches
           </p>
         )}
-        <p className="focus-patronus">Patronus: {patronus || 'N/A'}</p>
+        <p className="focus-patronus">
+          Patronus: {patronus || 'Not Specified'}
+        </p>
       </div>
     </div>
   );

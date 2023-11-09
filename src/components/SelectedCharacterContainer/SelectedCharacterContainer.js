@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import './SelectedCharacterContainer.css';
 import FocusCharacterCard from '../FocusCharacterCard/FocusCharacterCard';
 import ErrorComponent from '../ErrorComponent/ErrorComponent';
+import hogsmead from '../../images/aditya-vyas-wmXVABZ7JBk-unsplash.jpg';
 
 function SelectedCharacterContainer() {
   const [selectedCharacter, setSelectedCharacter] = useState('');
