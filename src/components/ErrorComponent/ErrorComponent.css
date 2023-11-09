@@ -1,3 +1,16 @@
 .error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
+}
+
+.error-h2,
+.error-h3 {
+  color: #ffffff;
+}
+
+.error-image {
+  width: 300px;
 }
