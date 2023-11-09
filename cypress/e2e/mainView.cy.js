@@ -44,6 +44,22 @@ describe('should load main page', () => {
   });
 
   it('should filter the characters based on the select dropdown filter', () => {
+    //filter dropdown = staff
+    cy.get('#filter-dropdown')
+      .select('staff')
+      .should('have.value', 'staff')
+      .get('.card-container')
+      .should('have.length', 1);
+    cy.get('.character-cards .card')
+      .last()
+      .within(() => {
+        cy.get('.character-name').contains('Minerva McGonagall');
+        cy.get('.character-card-img')
+          .should('have.attr', 'src')
+          .should('include', 'mcgonagall');
+      });
+
+    //filter dropdown = student
     cy.get('#filter-dropdown')
       .select('student')
       .should('have.value', 'student')
@@ -57,6 +73,8 @@ describe('should load main page', () => {
           .should('have.attr', 'src')
           .should('include', 'ron');
       });
+
+    //select and click on a character, navigate to selected character page
     cy.get(
       '[href="/character/9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8"] > .card-container > .card > .image-container-main > .character-card-img'
     )
