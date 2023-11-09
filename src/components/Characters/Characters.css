@@ -26,6 +26,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
+  padding: 1rem;
 }
 
 a:link,
@@ -35,15 +36,15 @@ a:active {
   text-decoration: inherit; /* Set text-decoration to inherit */
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .character-cards {
     grid-template-columns: repeat(4, 1fr);
   }
-}
+} */
 
 @media screen and (max-width: 980px) {
   .character-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
