@@ -11,7 +11,7 @@ function Footer() {
           <h2 className="subtitle">Harry Potter Magic Moments</h2>
         </div>
         <p className="project-details">
-          Harry Potter Magic Moments is a Turing School Module 3 project built
+          Harry Potter Magical Moments is a Turing School Module 3 project built
           with React.js. Designed and developed by FE 2307 student Ann
           Hochworter.
         </p>
