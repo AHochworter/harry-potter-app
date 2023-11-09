@@ -19,7 +19,7 @@ function App() {
         setCharacters([...characters, ...charactersWithImage]);
       })
       .catch(error => {
-        setError(error);
+        setError('Error fetching characters. Please try again later.');
       });
   }, []);
 
@@ -30,7 +30,7 @@ function App() {
         <div className="app-error-container">
           <ErrorComponent
             error={error}
-            message="We're sorry, we seem to be having trouble finding that page.  Please try again later."
+            message="Apologies, we're having trouble loading the page.  Please try again later."
           />
         </div>
       ) : (
@@ -44,6 +44,15 @@ function App() {
           <Route
             path="/character/:id"
             element={<SelectedCharacterContainer />}
+          />
+          <Route
+            path="*"
+            element={
+              <ErrorComponent
+                error={error}
+                message="Apologies, we can't find the requested page. Please hit the 'Home' button above."
+              />
+            }
           />
         </Routes>
       )}
