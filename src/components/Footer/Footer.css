@@ -75,7 +75,7 @@ p {
   filter: invert(100%);
 }
 
-/* @media (max-width: 1080px) {
+@media (max-width: 1080px) {
   .footer {
     flex-direction: column;
     flex-wrap: wrap;
@@ -95,4 +95,4 @@ p {
     justify-content: center;
     align-items: center;
   }
-} */
+}

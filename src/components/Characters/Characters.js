@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Characters.css';
 import Card from '../Card/Card';
 import CharacterFilter from '../CharacterFilter/CharacterFilter';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 function Characters({ characters }) {

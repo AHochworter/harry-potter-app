@@ -38,11 +38,10 @@ describe('should load a selected character', () => {
       .visit('http://localhost:3000/')
       .wait('@getCharacters');
 
-    //click on Harry's image
     cy.get(
       '[href="/character/9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8"] > .card-container > .card > .image-container-main > .character-card-img'
     ).click();
-    //Harry's character info should load
+
     cy.get('.selected-character').should('exist');
     cy.get('.focus-name').contains('Harry Potter');
     cy.get('.focus-character-image')
@@ -52,10 +51,13 @@ describe('should load a selected character', () => {
     cy.get('.focus-house').should('contain', 'Gryffindor');
     cy.get('.focus-born').should('contain', 'Born: 1980');
     cy.get('.focus-ancestry').should('contain', 'Ancestry: half-blood');
-    //looks good, jumping to last input
+    cy.get('.focus-wizard').should('contain', 'Wizard: Yes');
+    cy.get('.focus-wand').should(
+      'contain',
+      'Wand: holly wood, phoenix feather core, Length: 11 inches'
+    );
     cy.get('.focus-patronus').should('contain', 'Patronus: stag');
 
-    //footer elements
     cy.get('.linkedin-block > p > a')
       .invoke('attr', 'href')
       .should('eq', 'https://www.linkedin.com/in/annhochworter/');

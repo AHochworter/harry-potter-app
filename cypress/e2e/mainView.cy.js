@@ -14,7 +14,6 @@ describe('should load main page', () => {
     cy.get('.heading-two').contains('Magical Moments');
     cy.get('#filter-dropdown').should('exist');
 
-    // Check the first card in the characters container
     cy.get('.character-cards .card')
       .first()
       .within(() => {
@@ -31,10 +30,10 @@ describe('should load main page', () => {
           .should('have.attr', 'src')
           .should('include', 'mcgonagall');
       });
-    //test elements in the footer
+
     cy.get('.title-logo > .subtitle').should(
       'contain',
-      'Harry Potter Magic Moments'
+      'Harry Potter Magical Moments'
     );
     cy.get('.linkedin-block > p > a')
       .invoke('attr', 'href')
@@ -46,7 +45,6 @@ describe('should load main page', () => {
   });
 
   it('should filter the characters based on the select dropdown filter', () => {
-    //filter dropdown = staff
     cy.get('#filter-dropdown')
       .select('staff')
       .should('have.value', 'staff')
@@ -61,7 +59,6 @@ describe('should load main page', () => {
           .should('include', 'mcgonagall');
       });
 
-    //filter dropdown = student
     cy.get('#filter-dropdown')
       .select('student')
       .should('have.value', 'student')
@@ -76,7 +73,6 @@ describe('should load main page', () => {
           .should('include', 'ron');
       });
 
-    //select and click on a character, navigate to selected character page
     cy.get(
       '[href="/character/9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8"] > .card-container > .card > .image-container-main > .character-card-img'
     )
