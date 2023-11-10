@@ -91,10 +91,3 @@ Users should be able to:
 - Be able to filter the characters by 'student' or 'staff'
 - See errors if there are server errors
 ```
-
-
-
-
-
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
