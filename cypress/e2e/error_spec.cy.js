@@ -1,6 +1,5 @@
 describe('should get an error message for a failed network request', () => {
   it('should give the user an error message for a failure to fetch the characters', () => {
-    // Intercept initial fetch, check 404 error handling
     cy.intercept('GET', 'https://hp-api.onrender.com/api/characters', {
       statusCode: 404,
       body: '',
@@ -22,7 +21,6 @@ describe('should get an error message for a failed network request', () => {
   });
 
   it('should give a user an error for a failed network request for the selected character', () => {
-    // Intercept initial fetch
     cy.intercept('GET', 'https://hp-api.onrender.com/api/characters', {
       statusCode: 200,
       fixture: 'dummyData',
@@ -37,7 +35,6 @@ describe('should get an error message for a failed network request', () => {
         body: '',
       }
     ).as('getSelectedCharacter');
-    // Visit the URL and trigger the intercepts
     cy.visit('http://localhost:3000/');
     cy.wait('@getCharacters');
     cy.get(
@@ -55,7 +52,7 @@ describe('should get an error message for a failed network request', () => {
       'contain',
       "We're sorry, we're experiencing a server error. Please try again later"
     );
-    //test footer elements and link back to main view
+
     cy.get('.linkedin-block > p > a')
       .invoke('attr', 'href')
       .should('eq', 'https://www.linkedin.com/in/annhochworter/');
@@ -63,7 +60,6 @@ describe('should get an error message for a failed network request', () => {
       .invoke('attr', 'href')
       .should('eq', 'https://github.com/AHochworter');
 
-    //click on the home link to return to main view
     cy.get('.home-link').click();
     cy.url('http://localhost:3000');
   });

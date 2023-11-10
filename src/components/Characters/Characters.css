@@ -1,7 +1,7 @@
 .characters {
   grid-area: characters;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Create 3 columns with equal width */
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
   grid-template-areas:
     'character-filter'
@@ -32,15 +32,9 @@
 a:link,
 a:visited,
 a:active {
-  color: inherit; /* Set the color to inherit */
-  text-decoration: inherit; /* Set text-decoration to inherit */
+  color: inherit;
+  text-decoration: inherit;
 }
-
-/* @media screen and (max-width: 1200px) {
-  .character-cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
-} */
 
 @media screen and (max-width: 980px) {
   .character-cards {

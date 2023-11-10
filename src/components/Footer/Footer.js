@@ -7,8 +7,7 @@ function Footer() {
     <div className="footer">
       <div className="title-block">
         <div className="title-logo">
-          {/* <img src={tomatillo} className="footer-logo" alt="rancid logo" /> */}
-          <h2 className="subtitle">Harry Potter Magic Moments</h2>
+          <h2 className="subtitle">Harry Potter Magical Moments</h2>
         </div>
         <p className="project-details">
           Harry Potter Magical Moments is a Turing School Module 3 project built

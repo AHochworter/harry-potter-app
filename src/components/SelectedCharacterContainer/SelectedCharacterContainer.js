@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 import './SelectedCharacterContainer.css';
 import FocusCharacterCard from '../FocusCharacterCard/FocusCharacterCard';
 import ErrorComponent from '../ErrorComponent/ErrorComponent';
-import hogsmead from '../../images/aditya-vyas-wmXVABZ7JBk-unsplash.jpg';
 
 function SelectedCharacterContainer() {
   const [selectedCharacter, setSelectedCharacter] = useState('');
@@ -15,7 +14,7 @@ function SelectedCharacterContainer() {
     async function fetchData() {
       try {
         const data = await getUniqueCharacter(id);
-        //Access the first (and only)object in the array
+
         const characterData = data[0];
         setSelectedCharacter(characterData);
       } catch (error) {
@@ -34,7 +33,7 @@ function SelectedCharacterContainer() {
           error={selectedCharacterError}
           message="We're sorry, we're experiencing a server error. Please try again later"
         />
-      ) : selectedCharacter ? ( //think about reversing this logic with the!selectedCharacter first
+      ) : selectedCharacter ? (
         <FocusCharacterCard
           name={selectedCharacter.name}
           house={selectedCharacter.house}
