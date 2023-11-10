@@ -84,10 +84,10 @@ More Images
 ### User Stories
 ```
 Users should be able to:
-- Visit the app, all movies should be displayed
-- Click a movie, and see that movie's details
-- Return to the main view of all movies
-- Be able to search for a specific movie
+- Visit the app, Harry Potter characters should be displayed
+- Click a character, and see that character's details
+- Return to the main view of all characters
+- Be able to filter the characters by 'student' or 'staff'
 - See errors if there are server errors
 ```
 
