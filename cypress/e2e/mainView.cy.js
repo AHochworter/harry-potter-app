@@ -31,6 +31,7 @@ describe('should load main page', () => {
           .should('have.attr', 'src')
           .should('include', 'mcgonagall');
       });
+    //test elements in the footer
     cy.get('.title-logo > .subtitle').should(
       'contain',
       'Harry Potter Magic Moments'
@@ -38,6 +39,7 @@ describe('should load main page', () => {
     cy.get('.linkedin-block > p > a')
       .invoke('attr', 'href')
       .should('eq', 'https://www.linkedin.com/in/annhochworter/');
+
     cy.get('.github-block > p > a')
       .invoke('attr', 'href')
       .should('eq', 'https://github.com/AHochworter');
@@ -79,6 +81,9 @@ describe('should load main page', () => {
       '[href="/character/9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8"] > .card-container > .card > .image-container-main > .character-card-img'
     )
       .click()
+      .url(
+        'http://localhost:3000/character/9e3f7ce4-b9a7-4244-b709-dae5c1f1d4a8'
+      )
       .get('.selected-character');
     cy.get('.focus-name').contains('Harry Potter');
   });
