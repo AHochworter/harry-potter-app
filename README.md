@@ -1,70 +1,99 @@
-# Harry Potter App
+<div align="center">
 
-Welcome Harry Potter Fans! This react application was built for you.
+# Harry Potter Magical Moments
+![Screenshot 2023-11-10 at 11 39 46 AM](https://github.com/AHochworter/harry-potter-app/assets/125393235/faf46915-911f-450a-9386-e61f1f7bfdcb)
 
-## Available Scripts
+### [Deployed Link](https://rancid-tomatillos-joh-ann.vercel.app/)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+## Abstract
+Harry Potter Magical Moments" is an interactive and immersive app designed for fans to deepen their knowledge and appreciation of the Harry Potter universe. This engaging platform allows users to explore an array of iconic characters from the Harry Potter series. Each character is presented in a visually rich and intuitive interface, making navigation both enjoyable and easy.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Upon selecting a character, users are taken to a detailed page that not only provides essential information but also shares lesser-known facts and trivia, enriching the user's understanding of each character's role and evolution in the series. This feature is particularly exciting for die-hard fans looking to explore beyond the surface level
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Contributors
 
-### `npm test`
+- [Ann Hochworter](https://linkedin.com/in/AHochworter)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+</br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Preview & Demo Clips
+<details>
+<summary>
+Demo Clips
+</summary>
+<div align="center">  
+ 
+![harry-potter-01](https://github.com/AHochworter/harry-potter-app/assets/125393235/55befe80-3024-41a5-8c13-46ddcc13c8c7)
+Home Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![harry-potter-02](https://github.com/AHochworter/harry-potter-app/assets/125393235/0cdd7c91-e0f6-4bc6-8e52-3667a07e8cd7)
+Responsiveness
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+</div>
+</details>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<details>
+<summary>
+More Images
+</summary> 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<div align="center">
 
-## Learn More
+![Screenshot 2023-11-10 at 11 47 52 AM](https://github.com/AHochworter/harry-potter-app/assets/125393235/e864ff19-f85e-469a-b473-0a5f65660469)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+</br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot 2023-11-10 at 12 01 58 PM](https://github.com/AHochworter/harry-potter-app/assets/125393235/ff2d5df7-6d33-42ad-86d9-db799965ebed)
 
-### Code Splitting
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot 2023-11-10 at 12 03 06 PM](https://github.com/AHochworter/harry-potter-app/assets/125393235/62eb08cf-bbe4-45e2-8cc9-4e1cf3179dd9)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+</div>
 
-### Advanced Configuration
+### Goals
+```
+- Apply object-oriented programming (OOP) principles as the foundation for both the application's architecture and codebase
+- Work with an external API to receive data
+- Create a multi-page UX using Router
+- Design a modern, user-friendly and responsive website
+- Maintain well-structured code with minimal redundancy
+- Pay special attention to accessibility and usability across various devices, ensuring a perfect 100% score in Lighthouse's accessibility audit
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### User Stories
+```
+Users should be able to:
+- Visit the app, all movies should be displayed
+- Click a movie, and see that movie's details
+- Return to the main view of all movies
+- Be able to search for a specific movie
+- See errors if there are server errors
+```
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+
+
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
