@@ -3,7 +3,8 @@
 # Harry Potter Magical Moments
 ![Screenshot 2023-11-10 at 11 39 46 AM](https://github.com/AHochworter/harry-potter-app/assets/125393235/faf46915-911f-450a-9386-e61f1f7bfdcb)
 
-### [Deployed Link](https://rancid-tomatillos-joh-ann.vercel.app/)
+### [Deployed Link](https://harry-potter-app-kappa.vercel.app/)
+
 
 </div>
 
