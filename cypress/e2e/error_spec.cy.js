@@ -55,6 +55,7 @@ describe('should get an error message for a failed network request', () => {
       'contain',
       "We're sorry, we're experiencing a server error. Please try again later"
     );
+    //test footer elements and link back to main view
     cy.get('.linkedin-block > p > a')
       .invoke('attr', 'href')
       .should('eq', 'https://www.linkedin.com/in/annhochworter/');
