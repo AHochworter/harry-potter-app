@@ -1,10 +1,7 @@
 .footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  padding: 15px 0px 0px 0px;
-  font-size: 25px;
-  width: auto;
+  font-size: 1.5rem;
   color: #ffffff;
   background: black;
 }
@@ -32,12 +29,13 @@
 
 .subtitle {
   font-family: 'Russo One', sans-serif;
-  font-size: 0.5em;
+  font-size: 1.5rem;
 }
 
 .project-details {
   margin-top: 6px;
   font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
 }
 
 .linkedin,
@@ -59,7 +57,7 @@ a:hover {
 }
 
 p {
-  font-size: 0.4em;
+  font-size: 1rem;
   font-family: 'Quicksand', sans-serif;
   margin-top: 6px;
   padding: 3px 3px 3px 3px;
@@ -78,7 +76,6 @@ p {
 @media (max-width: 1080px) {
   .footer {
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
   }

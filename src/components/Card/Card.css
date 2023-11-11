@@ -18,9 +18,10 @@
 
 .character-name {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 2rem;
   justify-content: center;
 }
+
 .card:hover {
   cursor: pointer;
   opacity: 0.9;
