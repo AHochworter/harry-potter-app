@@ -36,14 +36,14 @@
   font-size: 2.5rem;
   font-family: 'Hepta Slab', serif;
   color: #ffffff;
-  margin: 1rem 0rem 1rem 0.5rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
 .heading-two {
   font-size: 1.5rem;
   font-family: 'Hepta Slab', serif;
   color: #ffffff;
-  margin: 1rem 0rem 1rem 0.5rem;
+  margin: 0rem 0rem 0.5rem 0rem;
 }
 
 @media screen and (max-width: 650px) {
