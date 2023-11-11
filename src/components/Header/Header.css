@@ -42,3 +42,16 @@
   color: #ffffff;
   margin: 1rem 0rem 1rem 0.5rem;
 }
+
+@media screen and (max-width: 500px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading-one,
+  .heading-two {
+    text-align: center;
+  }
+}
