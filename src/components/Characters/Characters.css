@@ -7,6 +7,7 @@
     'character-filter'
     'character-cards';
 }
+
 .character-name {
   color: #ffffff;
 }
@@ -39,6 +40,12 @@ a:active {
 @media screen and (max-width: 980px) {
   .character-cards {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .character-cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
