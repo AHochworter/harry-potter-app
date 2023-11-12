@@ -3,7 +3,7 @@
   flex-direction: row;
   background-color: #54212c;
   width: 85%;
-  height: 75%;
+  min-height: 75vh;
   padding: 2rem;
 }
 
@@ -71,6 +71,7 @@
 @media screen and (max-width: 850px) {
   .focus-character-card {
     flex-direction: column;
+    margin-top: 75px;
   }
 
   .focus-card-left,

@@ -78,6 +78,7 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 115px;
   }
   .title-block,
   .linkedin-block,
