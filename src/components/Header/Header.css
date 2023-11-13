@@ -32,6 +32,10 @@
   font-size: 2rem;
 }
 
+.home-link {
+  z-index: 3;
+}
+
 .heading-one {
   font-size: 2.5rem;
   font-family: 'Hepta Slab', serif;
@@ -75,6 +79,6 @@
   }
 
   .header .home-link {
-    font-size: 0.9rem; /* Adjust the font size if necessary */
+    font-size: 1rem; /* Adjust the font size if necessary */
   }
 }
