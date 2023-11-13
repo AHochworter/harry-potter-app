@@ -4,6 +4,7 @@
   font-size: 1.5rem;
   color: #ffffff;
   background: black;
+  z-index: 1;
 }
 
 .title-block {
@@ -80,6 +81,7 @@ p {
     align-items: center;
     margin-top: 115px;
   }
+
   .title-block,
   .linkedin-block,
   .github-block {
